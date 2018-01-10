@@ -1,0 +1,115 @@
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1400px;
+	min-width: 960px;
+	margin: auto;
+}
+
+.row > p {
+	margin-bottom: 10px;
+}
+
+.row > div {
+	height: 190px;
+
+	background: #ccc;
+	margin-right: 10px;
+	margin-top: 10px;
+
+	border: 1px solid #000;
+	padding: 15px;
+
+	float: left;
+}
+
+.col-1 {
+	width: 22%;
+	float: left;
+	position: relative;
+}
+
+.col-1 .new1 {
+	transform: rotate(25deg);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.col-2 {
+	width: 22%;
+	float: left;
+	position: relative;
+}
+
+.col-2 .new2 {
+	transform: rotate(-25deg);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.col-3 {
+	width: 22%;
+	float: left;
+	position: relative;
+}
+
+.col-3 .new3 {
+	transform: rotate(-25deg);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.col-4 {
+	width: 22%;
+	float: left;
+	position: relative;
+}
+
+.col-4 .new4 {
+	transform: rotate(25deg);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.row:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.block2 {
+	background: #0027ff;
+	height: auto;
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+
+	color: #fff;
+	font-size: 25px;
+	opacity: 0.5
+}
+
+.block-parent {
+	background: #ccc;
+	position: relative;
+
+	width: 250px;
+	height: auto;
+
+	margin-top: 50px;
+	margin-right: 10px;
+	float: left;
+}
+
+.block-parent:hover .block2 {
+	display: none;
+}
